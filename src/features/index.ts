@@ -1,0 +1,1 @@
+export { SequenceResult } from './SequenceAlignment';
