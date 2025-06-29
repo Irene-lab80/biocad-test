@@ -1,38 +1,60 @@
-# Vite + React + Typescript + Eslint + Prettier
+# 🧬 Инструмент для визуализации выравнивания аминокислотных последовательностей 🧪
+[ТЗ](https://github.com/biocad/career/blob/master/tests/bio-structure.md)
+## ✨ Особенности
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+- 🔍 Валидация ввода (только стандартные аминокислотные символы)
+- 🎨 Цветовая схема аминокислот согласно биохимическим свойствам
+- 🔦 Подсветка различий между последовательностями
+- 🔎 Поддержка поиска по странице (Ctrl+F/Cmd+F)
+- 📱 Адаптивный дизайн
+- 📋 Копирование выделенных последовательностей
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+## 🚀 Быстрый старт
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/your-username/biocad-test.git
+cd biocad-test
 
-## Installation
+# 2. Установить зависимости
+npm install
 
-Clone the repo and run `yarn install`
-
-or Run command
-
+# 3. Запустить приложение
+npm run dev
 ```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
+
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
+
+## 🧪 Как пользоваться
+
+1. Введите две аминокислотные последовательности в поля ввода
+2. Нажмите кнопку "Align Sequences"
+3. Наслаждайтесь результатом:
+   - 🟢 Верхняя строка: все аминокислоты с цветовой маркировкой
+   - 🔴 Нижняя строка: только различия с верхней строкой
+
+## 🧬 Пример последовательности
+```
+VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR
 ```
 
-## Start
+## 📝 Требования к вводу
+- Только символы: `A, R, N, D, C, E, Q, G, H, I, L, K, M, F, P, S, T, W, Y, V, -`
+- Последовательности должны быть одинаковой длины
 
-After the successfull installation of the packages: `yarn dev`
+## 🏗️ Структура проекта
+```
+src/
+├── app/          # Инициализация приложения
+├── pages/        # Страницы
+│   └── alignment # Главная страница
+├── features/     # Функциональность
+│   └── sequence-alignment # Логика выравнивания
+├── shared/       # Общие компоненты
+│   ├── ui        # UI компоненты
+│   └── config    # Конфигурации
+```
 
-## Steps in Vscode
-
-#### (works with better with this template)
-
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
-
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
-
-If Everything is Good Then It Should Work, but let me new if something else happens
-
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
-# biocad-test
+## 🌍 Демо
+Посмотрите работающее приложение:  
+🔗 [Демо на GitHub Pages](https://your-username.github.io/biocad-sequence-aligner)
